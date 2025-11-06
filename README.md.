@@ -1,0 +1,44 @@
+# Employee Management API with Quarkus and MySQL
+
+## 📘 About Quarkus
+
+Quarkus is a modern, Kubernetes-native Java framework designed for building high-performance, lightweight microservices and serverless applications. It optimizes Java for container environments, offering fast startup times, low memory usage, and developer-friendly features.
+
+### 🔑 Key Features
+- Fast boot time and low memory footprint
+- Live reload during development (`quarkus:dev`)
+- Native compilation support via GraalVM
+- Rich extension ecosystem (REST, JPA, JDBC, Kafka, etc.)
+- Unified configuration via `application.properties`
+
+---
+
+## 📁 Project Structure
+
+- `Employee.java`: Entity class for employee data
+- `EmployeeResource.java`: REST API for employee operations
+- `application.properties`: Configuration for MySQL and Hibernate
+- `pom.xml`: Maven build file with Quarkus dependencies
+
+---
+
+## 🚀 Running the Application
+
+1. Ensure MySQL is running and the database is created.
+2. Update `application.properties` with your MySQL credentials.
+3. Run the application:
+   ```bash
+   mvn quarkus:dev
+
+## 🔍 Comparison: Spring Boot vs Quarkus
+
+| Feature                     | Spring Boot                                | Quarkus                                      |
+|----------------------------|---------------------------------------------|----------------------------------------------|
+| Startup Time               | Moderate                                    | Very Fast (suitable for serverless)          |
+| Memory Usage               | Higher                                      | Lower (optimized for containers)             |
+| Native Compilation         | Limited support                             | Excellent support via GraalVM                |
+| Live Reload                | Spring DevTools                             | Built-in with `quarkus:dev`                  |
+| Cloud-Native Support       | Requires additional setup                   | Designed for Kubernetes and cloud-native     |
+| Extension Ecosystem        | Rich ecosystem                              | Growing ecosystem with curated extensions    |
+| Build Tool                 | Maven/Gradle                                | Maven/Gradle                                 |
+| Developer Experience       | Mature and widely adopted                   | Fast feedback loop and modern tooling        |
